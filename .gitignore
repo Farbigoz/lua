@@ -1,4 +1,5 @@
 .gitattributes
+.idea
 
 *.so
 *.o
