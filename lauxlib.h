@@ -260,7 +260,7 @@ typedef struct luaL_Stream {
 //#define lua_writestring(s,l)   fwrite((s), sizeof(char), (l), stdout)
 
 void lua_stdout_hook(const char*, size_t);
-#define lua_writestring(s,l)   luaI_print((s), (l))
+#define lua_writestring(s,l)   lua_stdout_hook((s), (l))
 #endif
 
 /* print a newline and flush the output */
